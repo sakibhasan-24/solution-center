@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solution Center</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- tailwind -->
 
     <link
@@ -11,9 +16,63 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      body{
+        font-family: 'EB Garamond', serif;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1 class="p-2">Best Solution center</h1>
+    <header class="container mx-auto  my-12">
+
+      <div
+        class="flex flex-col-reverse md:flex-row gap-6 items-center justify-around"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="images/business.png"
+            class="flex items-center"
+            alt="nav img"
+          />
+          <a class="text-4xl text-gray-600 font-bold" href="http://">Justice</a>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between list-none gap-6 text-gray-500 font-semibold"
+        >
+          <li><a href="http://">Home</a></li>
+          <li><a href="http://">Service</a></li>
+          <li><a href="http://">Contact</a></li>
+          <li><a href="http://">Cases</a></li>
+          <li><a href="http://">Blogs</a></li>
+          <li>
+           
+        </div>
+        <div>
+          <a
+            class="bg-[#B68C5A] text-white py-2 px-3 text-xl md:py-4 md:px-6 rounded-lg md:text-xl"
+            >Free Consultation</a>
+        </div>
+      </li>
+      </div>
+      <!-- banner section -->
+        <div class="container my-12 mx-auto bg-gradient-to-br from-[#111] to-[#111111] rounded-lg">
+          <div class="hero min-h-screen " style="background-image: url(images/banner.png);">
+           
+            <div class="hero-content text-center text-neutral-content">
+              <div class="w-3/4 space-y-4">
+                <h1 class="mb-5 text-7xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                <p class="mb-5  text-2xl text-gray-200">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <input type="text" placeholder="Search Your Services" class="py-4 px-12 rounded-lg w-3/4 mr-2" />
+                <button class="bg-[#B68C5A] text-white py-4 px-6  rounded-lg text-xl">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- end of banner section -->
+    </header>
+
+
+    <main></main>
   </body>
 </html>
